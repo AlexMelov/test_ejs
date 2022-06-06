@@ -1,11 +1,27 @@
-<h2>Body part</h2>
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aspernatur.
-</p>
-<p>Some other Lorem ipsum dolor sit amet.</p>
-<select>
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-</select>
-<button id="submitButton" onclick="submitHandler()">Submit</button>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/public/stylesheets/app.css" />
+    </head>
+
+    <body>
+        <h2>Body part</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+            aspernatur.
+        </p>
+        <p>Some other Lorem ipsum dolor sit amet.</p>
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <button
+            id="submitButton"
+            onclick="<%- include('../functions/functions.ejs'); %>"
+        >
+            Submit
+        </button>
+        <script></script>
+    </body>
+</html>

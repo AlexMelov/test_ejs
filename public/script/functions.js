@@ -2,6 +2,6 @@ document.addEventListener("init", function (event) {
     submitHandler();
 });
 
-function submitHandler() {
+export function submitHandler() {
     console.log("working");
 }
