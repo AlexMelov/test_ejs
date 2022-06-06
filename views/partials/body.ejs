@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="/public/stylesheets/app.css" />
-    </head>
+    <head> </head>
 
     <body>
         <h2>Body part</h2>
@@ -16,12 +14,12 @@
             <option>2</option>
             <option>3</option>
         </select>
-        <button
-            id="submitButton"
-            onclick="<%- include('../functions/functions.ejs'); %>"
-        >
-            Submit
-        </button>
-        <script></script>
+        <button id="submitButton" onclick="submitHandler()">Submit</button>
+        <script>
+            function submitHandler()
+            {
+            	<%- include('../functions/functions.ejs'); %>
+            }
+        </script>
     </body>
 </html>
