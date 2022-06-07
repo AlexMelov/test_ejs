@@ -5,15 +5,17 @@
   "main": "index.js",
   "dependencies": {
     "body-parser": "1.20.0",
+    "cors": "2.8.5",
     "dotenv": "16.0.1",
     "ejs": "^3.1.8",
     "express": "4.18.1",
-    "nodemon": "2.0.16",
-	"cors" :"2.8.5"
+    "node-sass": "^7.0.1",
+    "nodemon": "2.0.16"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "nodemon src/index.js"
+    "serve": "nodemon src/index.js",
+    "compile:sass": "node-sass public/stylesheets/sass/main.scss public/stylesheets/app.css -w"
   },
   "author": "Alex",
   "license": "ISC"
