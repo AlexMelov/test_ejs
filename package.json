@@ -15,7 +15,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "nodemon src/index.js",
-    "compile:sass": "node-sass public/stylesheets/sass/main.scss public/stylesheets/app.css -w",
+    "compile:sass": "node-sass views/stylesheets/sass/main.scss views/stylesheets/app.css -w",
 	"run-all" : "npm-run-all --parallel serve compile:sass"
   },
   "author": "Alex",

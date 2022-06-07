@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <style>
-            <%- include('../../public/stylesheets/app.css'); %>
+            <%- include('../stylesheets/app.css'); %>
         </style>
     </head>
     <body>
         <h2>Body part</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-            aspernatur.
+            aspernatur. <%= submit.submit(); %>
         </p>
         <p>Some other Lorem ipsum dolor sit amet.</p>
         <select id="select_button">
@@ -17,10 +17,12 @@
             <option value="2">2</option>
             <option value="3">3</option>
         </select>
-        <button id="submit_button">Submit</button>
+        <ons-click>
+            <button id="submit_button">Submit</button>
+        </ons-click>
         <script>
             const button = document.getElementById("submit_button");
-            let value = 0;
+            let value = 1;
 
             button.addEventListener("click", () => {
                 console.log(value);

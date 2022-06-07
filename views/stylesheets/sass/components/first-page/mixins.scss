@@ -1,0 +1,53 @@
+@import "colors";
+
+@mixin button {
+    padding: 0.5rem 1rem;
+    color: $all-texts-light;
+    background-color: $submit-button-bg;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        background-color: darken($submit-button-bg, $amount: 10);
+    }
+}
+
+@mixin select {
+    display: block;
+    background-color: $select-bg;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    option {
+        background-color: $options-bg;
+    }
+}
+
+@mixin navbar {
+    ul {
+        display: flex;
+        li {
+            list-style-type: none;
+            margin: 0.2rem auto;
+            transition: all 0.3s ease;
+            &:hover {
+                transform: scale(1.1);
+            }
+            a {
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                background-color: $navbar-link-bg;
+                color: $all-texts-dark;
+                border: none;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: darken($navbar-link-bg, $amount: 20);
+                }
+            }
+        }
+    }
+}
