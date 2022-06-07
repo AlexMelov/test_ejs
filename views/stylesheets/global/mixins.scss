@@ -1,0 +1,27 @@
+@import "colors";
+
+@mixin button {
+    padding: 0.5rem 1rem;
+    color: $all-texts-light;
+    background-color: $submit-button-bg;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        background-color: darken($submit-button-bg, $amount: 10);
+    }
+}
+
+@mixin select {
+    display: block;
+    background-color: $select-bg;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    option {
+        background-color: $options-bg;
+    }
+}

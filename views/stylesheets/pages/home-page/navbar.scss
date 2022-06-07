@@ -1,0 +1,32 @@
+@import '../../global/colors';
+@import '../../global/mixins';
+
+nav{
+	padding: 1rem 2rem;
+	margin: 0;
+	ul {
+		display: flex;
+		li {
+			list-style-type: none;
+			margin: 0.2rem auto;
+			transition: all 0.3s ease;
+			&:hover {
+				transform: scale(1.1);
+			}
+			a {
+				text-decoration: none;
+				padding: 0.5rem 1rem;
+				background-color: $navbar-link-bg;
+				color: $all-texts-dark;
+				border: none;
+				border-radius: 5px;
+				transition: all 0.3s ease;
+				&:hover {
+					cursor: pointer;
+					background-color: darken($navbar-link-bg, $amount: 30);
+					color: $all-texts-light;
+				}
+			}
+		}
+	}
+}
