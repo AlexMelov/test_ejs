@@ -1,8 +1,5 @@
-document.addEventListener("init", function (event) {
-    submitHandler();
-});
-
-const button = getElementById("submitButton");
-export function submitHandler() {
+function submitHandler() {
     console.log("working");
 }
+
+module.exports = { submit: submitHandler };

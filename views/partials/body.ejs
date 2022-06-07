@@ -13,15 +13,22 @@
         </p>
         <p>Some other Lorem ipsum dolor sit amet.</p>
         <select id="select_button">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
         </select>
-        <button id="submit_button" onclick="submitHandler()">Submit</button>
+        <button id="submit_button">Submit</button>
         <script>
-            function submitHandler() {
-                console.log("Yes");
-            }
+            const button = document.getElementById("submit_button");
+            let value = 0;
+
+            button.addEventListener("click", () => {
+                console.log(value);
+            });
+            const select = document.getElementById("select_button");
+            select.addEventListener("change", (item) => {
+                value = item.target.value;
+            });
         </script>
     </body>
 </html>
