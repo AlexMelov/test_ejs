@@ -25,3 +25,16 @@
         background-color: $options-bg;
     }
 }
+
+@mixin input {
+        width: 50%;
+        margin: 1rem auto;
+        border-radius: 5px;
+        border: none;
+        border-bottom: 1px solid $all-texts-dark;
+        height: 4vh;
+        outline: none;
+        &:focus{
+            height: 4vh;
+        }
+}
