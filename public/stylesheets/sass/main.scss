@@ -1,5 +1,12 @@
-$bg-color : rgb(40, 48, 121);
+$bg-color : #ffdfdf;
+@import 'mixins';
 
 body{
 	background-color: $bg-color;
+	#submit_button{
+		@include button;
+	}
+	select{
+		@include select;
+	}
 }

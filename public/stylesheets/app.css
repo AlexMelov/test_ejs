@@ -1,2 +1,23 @@
 body {
-  background-color: #283079; }
+  background-color: #ffdfdf; }
+  body #submit_button {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: purple;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease; }
+    body #submit_button:hover {
+      cursor: pointer;
+      transform: scale(1.1); }
+  body select {
+    display: block;
+    background-color: #ffff31;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem; }
+    body select option {
+      background-color: #6fffe0; }
+      body select option :hover {
+        background-color: #61e493; }

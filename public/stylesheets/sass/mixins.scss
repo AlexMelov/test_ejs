@@ -1,0 +1,27 @@
+@mixin button {
+	padding: 0.5rem 1rem;
+	color: white;
+	background-color: purple;
+	border-radius: 5px;
+	border: none;
+	transition: all 0.3s ease;
+	&:hover{
+		cursor: pointer;
+		transform: scale(1.1);
+	}
+}
+
+@mixin select{
+	display: block;
+	background-color: rgb(255, 255, 49);
+	width: 100px;
+	border: none;
+	border-radius: 5px;
+	padding: 0.5rem 1rem;
+	option{
+		background-color: rgb(111, 255, 224);
+		:hover{
+			background-color: rgb(97, 228, 147);
+		}
+	}
+}
