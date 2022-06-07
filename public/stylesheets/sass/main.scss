@@ -1,12 +1,5 @@
-$bg-color : #ffdfdf;
 @import 'mixins';
-
-body{
-	background-color: $bg-color;
-	#submit_button{
-		@include button;
-	}
-	select{
-		@include select;
-	}
-}
+@import 'navbar';
+@import 'body';
+@import 'button';
+@import 'select';

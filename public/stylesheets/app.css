@@ -1,23 +1,45 @@
-body {
-  background-color: #ffdfdf; }
-  body #submit_button {
-    padding: 0.5rem 1rem;
-    color: white;
-    background-color: purple;
-    border-radius: 5px;
-    border: none;
+nav ul {
+  display: flex; }
+  nav ul li {
+    list-style-type: none;
+    margin: 0.2rem auto;
     transition: all 0.3s ease; }
-    body #submit_button:hover {
-      cursor: pointer;
+    nav ul li:hover {
       transform: scale(1.1); }
-  body select {
-    display: block;
-    background-color: #ffff31;
-    width: 100px;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem; }
-    body select option {
-      background-color: #6fffe0; }
-      body select option :hover {
-        background-color: #61e493; }
+    nav ul li a {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background-color: #9ad0ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: all 0.3s ease; }
+      nav ul li a:hover {
+        background-color: aqua; }
+
+body {
+  background-color: #678886;
+  color: #ffff; }
+
+#submit_button {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: purple;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease; }
+  #submit_button:hover {
+    cursor: pointer;
+    transform: scale(1.1); }
+
+body select {
+  display: block;
+  background-color: #ffff31;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem; }
+  body select option {
+    background-color: #6fffe0; }
+    body select option :hover {
+      background-color: #61e493; }
