@@ -17,7 +17,11 @@
     const list = document.querySelectorAll(".navbar-list li");
     list.forEach((item) => {
         item.addEventListener("click", (element) => {
-            console.log(element.target.innerHTML);
+            if (element.target.innerHTML === "Link 1") {
+                document.location.href = "/";
+            } else if (element.target.innerHTML === "Link 2") {
+                document.location.href = "/second-page";
+            }
         });
     });
 </script>
