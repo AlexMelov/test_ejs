@@ -1,0 +1,23 @@
+<h2>Nav Bar</h2>
+<nav>
+    <ul class="navbar-list">
+        <li>
+            <a>Link 1</a>
+        </li>
+        <li>
+            <a>Link 2</a>
+        </li>
+        <li>
+            <a href="https://www.google.com/" target="_blank">Link 3</a>
+        </li>
+    </ul>
+</nav>
+
+<script>
+    const list = document.querySelectorAll(".navbar-list li");
+    list.forEach((item) => {
+        item.addEventListener("click", (element) => {
+            console.log(element.target.innerHTML);
+        });
+    });
+</script>
