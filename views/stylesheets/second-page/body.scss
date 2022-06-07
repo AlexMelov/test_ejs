@@ -1,14 +1,14 @@
 @import "../../global/colors";
 @import "../../global/mixins";
 
-.userLoginForm
-{
+.userLoginForm {
   background-color: $form-bg;
   padding: 5rem;
   display: flex;
   flex-direction: column;
   text-align: center;
-  input{
+
+  input {
     @include input;
   }
 }

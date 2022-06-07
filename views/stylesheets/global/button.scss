@@ -1,5 +1,5 @@
-@import 'mixins';
+@import "mixins";
 
-#submit_button{
-	@include button;
+#submit_button {
+  @include button;
 }
