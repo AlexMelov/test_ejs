@@ -16,6 +16,6 @@
     }
 	function postData(url, data)
 	{
-		fetch(url=url,{method: "POST", body : JSON.stringify({username: "Some user", password: "some password"})}).then(response => console.log(response)).catch((error)=>console.log({message:error.message}))
+		fetch(url=url,{method: "POST", body : JSON.stringify(data)}).then(response => console.log(response)).catch((error)=>console.log({message:error.message}))
 	}
 </script>
