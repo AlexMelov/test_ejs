@@ -2,7 +2,10 @@
   "overrides":
   [
     {
-      "files":["src/**/*.js"],
+      "files":
+	  [
+		  "src/**/*.js"
+		],
       "env": {
         "browser": true,
         "es2021": true
