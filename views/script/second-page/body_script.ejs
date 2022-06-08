@@ -1,0 +1,17 @@
+<script>
+    let inputName;
+    let inputPassword;
+
+    function getName(event) {
+        let name = event.target.value;
+        inputName = name;
+    }
+    function getPassword(event) {
+        let password = event.target.value;
+        inputPassword = password;
+    }
+    function submitHandler(event) {
+        event.preventDefault();
+        console.log(inputName, inputPassword);
+    }
+</script>

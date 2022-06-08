@@ -1,14 +1,19 @@
 @import "../global/colors";
 @import "../global/mixins";
 
-.user-login-form{
-  background-color: $form-bg;
-  flex-direction: column;
-  display: flex;
-  padding: 5rem;
-  text-align: center;
+.user-login-form {
+    background-color: $form-bg;
+    flex-direction: column;
+    display: flex;
+    padding: 5rem;
+    text-align: center;
 
-  input {
-    @include input;
-  }
+    input {
+        @include input;
+    }
+    button {
+        @include button;
+        width: 50%;
+        margin: 0 auto;
+    }
 }

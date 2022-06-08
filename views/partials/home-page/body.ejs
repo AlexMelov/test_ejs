@@ -12,24 +12,15 @@
                 aspernatur. <%= submit.submit(); %>
             </p>
             <p>Some other Lorem ipsum dolor sit amet.</p>
-            <select id="select-button">
+            <select id="select-button" onchange="selectItem(event)">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
             </select>
-            <button id="submit-button">Submit</button>
+            <button id="submit-button" onclick="submitHandler(event)">
+                Submit
+            </button>
         </div>
-        <script>
-            const button = document.getElementById("submit-button");
-            let value = 1;
-
-            button.addEventListener("click", () => {
-                console.log(value);
-            });
-            const select = document.getElementById("select-button");
-            select.addEventListener("change", (item) => {
-                value = item.target.value;
-            });
-        </script>
+        <script></script>
     </body>
 </html>

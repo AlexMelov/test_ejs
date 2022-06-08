@@ -1,0 +1,11 @@
+<script>
+    let value = 1;
+    function submitHandler(event) {
+        event.preventDefault();
+        console.log(value);
+    }
+    function selectItem(event) {
+        const select = document.getElementById("select-button");
+        value = event.target.value;
+    }
+</script>

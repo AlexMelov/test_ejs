@@ -1,14 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<body>
-  <form class="user-login-form">
-    <label for="textInput">Enter your name</label>
-    <input id="textInput" type="text" />
-    <br />
-    <label for="passwordInput">Enter your password</label>
-    <input id="passwordInput" type="text" />
-  </form>
-</body>
-
+    <body>
+        <form class="user-login-form">
+            <label for="textInput">Enter your name</label>
+            <input id="textInput" onkeyup="getName(event)" type="text" />
+            <br />
+            <label for="passwordInput">Enter your password</label>
+            <input
+                id="passwordInput"
+                onkeyup="getPassword(event)"
+                type="text"
+            />
+            <button onclick="submitHandler(event)">Submit</button>
+        </form>
+    </body>
 </html>

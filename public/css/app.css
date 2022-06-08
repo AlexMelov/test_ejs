@@ -64,6 +64,19 @@ nav {
     outline: none; }
     .user-login-form input:focus {
       height: 4vh; }
+  .user-login-form button {
+    padding: 0.5rem 1rem;
+    color: #ffff;
+    background-color: #2831ad;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    width: 50%;
+    margin: 0 auto; }
+    .user-login-form button:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      background-color: #2831ad; }
 
 * {
   margin: 0;
