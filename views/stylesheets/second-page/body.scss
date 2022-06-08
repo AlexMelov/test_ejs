@@ -1,7 +1,7 @@
-@import "../../global/colors";
-@import "../../global/mixins";
+@import "../global/colors";
+@import "../global/mixins";
 
-.user-login-form {
+.user-login-form{
   background-color: $form-bg;
   flex-direction: column;
   display: flex;
