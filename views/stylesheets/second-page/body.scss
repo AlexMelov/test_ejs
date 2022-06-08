@@ -2,8 +2,8 @@
 @import "../../global/mixins";
 
 .user-login-form {
-  background-color: $form-bg;
   padding: 5rem;
+  background-color: $form-bg;
   display: flex;
   flex-direction: column;
   text-align: center;
