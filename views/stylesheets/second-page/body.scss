@@ -2,10 +2,10 @@
 @import "../../global/mixins";
 
 .user-login-form {
-  padding: 5rem;
   background-color: $form-bg;
-  display: flex;
   flex-direction: column;
+  display: flex;
+  padding: 5rem;
   text-align: center;
 
   input {
