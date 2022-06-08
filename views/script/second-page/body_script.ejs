@@ -12,10 +12,28 @@
     }
     function submitHandler(event) {
         event.preventDefault();
-		postData("http://localhost:8000/second-page",{username:  inputName, password: inputPassword})
+        postData("http://localhost:8000/second-page");
     }
-	function postData(url, data)
-	{
-		fetch(url=url,{method: "POST", body : JSON.stringify(data)}).then(response => console.log(response)).catch((error)=>console.log({message:error.message}))
-	}
+    function postData(url) {
+        const data = {
+            username: inputName,
+            password: inputPassword,
+        };
+        console.log(inputName, inputPassword);
+
+        fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log("Success:", data);
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+    }
 </script>
