@@ -7,7 +7,7 @@
             <a>Second Page</a>
         </li>
         <li>
-            <a href="https://www.google.com/" target="_blank">Link 3</a>
+            <a >Third Page</a>
         </li>
     </ul>
 </nav>
@@ -20,6 +20,8 @@
                 document.location.href = "/";
             } else if (element.target.innerHTML === "Second Page") {
                 document.location.href = "/second-page";
+            }else if (element.target.innerHTML === "Third Page") {
+                document.location.href = "/third-page";
             }
         });
     });
