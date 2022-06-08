@@ -28,7 +28,7 @@ nav {
 
         &:hover {
           cursor: pointer;
-          background-color: darken($navbar-link-bg, $amount: 30);
+          background-color: $navbar-link-bg;
           color: $all-texts-light;
         }
       }

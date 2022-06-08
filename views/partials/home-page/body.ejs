@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <style></style>
-    </head>
-    <body>
+
+<head>
+    <style></style>
+</head>
+
+<body>
     <div class="home-page">
         <h2>Body part</h2>
         <p>
@@ -16,19 +18,20 @@
             <option value="2">2</option>
             <option value="3">3</option>
         </select>
-            <button id="submit_button">Submit</button>
+        <button id="submit-button">Submit</button>
     </div>
-        <script>
-            const button = document.getElementById("submit_button");
-            let value = 1;
+    <script>
+        const button = document.getElementById("submit_button");
+        let value = 1;
 
-            button.addEventListener("click", () => {
-                console.log(value);
-            });
-            const select = document.getElementById("select_button");
-            select.addEventListener("change", (item) => {
-                value = item.target.value;
-            });
-        </script>
-    </body>
+        button.addEventListener("click", () => {
+            console.log(value);
+        });
+        const select = document.getElementById("select_button");
+        select.addEventListener("change", (item) => {
+            value = item.target.value;
+        });
+    </script>
+</body>
+
 </html>

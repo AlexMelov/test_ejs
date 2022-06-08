@@ -11,7 +11,7 @@
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
-    background-color: darken($submit-button-bg, $amount: 10);
+    background-color: $submit-button-bg;
   }
 }
 
