@@ -12,7 +12,9 @@
     }
     function submitHandler(event) {
         event.preventDefault();
-        postData("http://localhost:8000/second-page");
+        postData("http://localhost:8000/third-page");
+        document.getElementById('textInput').value='';
+        document.getElementById('passwordInput').value='';
     }
     function postData(url) {
         const data = {

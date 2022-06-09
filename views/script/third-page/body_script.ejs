@@ -1,8 +1,40 @@
 <script>
-	let fetchedData;
-	function fetchData()
-	{
-		fetch("https://jsonplaceholder.typicode.com/posts").then(response=>response.json().then(data=>fetchData))
-	}
-	fetchData()
+    let inputName;
+    let inputPassword;
+
+    function getName(event) {
+        let name = event.target.value;
+        inputName = name;
+    }
+    function getPassword(event) {
+        let password = event.target.value;
+        inputPassword = password;
+    }
+    function submitHandler(event) {
+        event.preventDefault();
+        postData("http://localhost:8000/second-page");
+        document.getElementById('loginUsername').value='';
+        document.getElementById('loginPassword').value='';
+    }
+    function postData(url) {
+        const data = {
+            username: inputName,
+            password: inputPassword,
+        };
+
+        fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+    }
 </script>

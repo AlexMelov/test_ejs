@@ -1,3 +1,12 @@
-<ul>
-	<li class="thied-page-item">Item</li>
-</ul>
+<form class="user-login-form">
+	<label for="loginUsername">Enter your name</label>
+	<input id="loginUsername" onkeyup="getName(event)" type="text" />
+	<br />
+	<label for="loginPassword">Enter your password</label>
+	<input
+			id="loginPassword"
+			onkeyup="getPassword(event)"
+			type="password"
+	/>
+	<button onclick="submitHandler(event)">Submit</button>
+</form>
